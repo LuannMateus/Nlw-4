@@ -28,11 +28,14 @@
     hmtl {
         font-size: 87.5%;
     }
+
 }
 
-body {
+body, html {
     background-color: var(--background);
     color: var(--text);
+
+    height: 100vh;
 }
 
 body, input, textarea, button {

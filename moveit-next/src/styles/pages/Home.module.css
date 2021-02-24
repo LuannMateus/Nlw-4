@@ -16,3 +16,7 @@
     gap: 6.25rem;
     align-items: center;
 }
+
+.container section .challengeBox {
+    height: 50%;
+}
