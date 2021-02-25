@@ -24,6 +24,24 @@ class UserController {
 
         return res.status(201).json(user);
     }
+
+    async getAllUsers(req: Request, res: Response) {
+        const usersRepository = getCustomRepository(UsersRepository);
+
+
+        try {
+            const allUsers = await usersRepository.find({});
+
+            res.json(allUsers)
+
+        } catch (error) {
+            res.status(400).json({
+                error: "Not possible get all users."
+            })
+        }
+
+        
+    }
 }
 
 export { UserController };
