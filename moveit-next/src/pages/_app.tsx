@@ -1,4 +1,3 @@
-import App from 'next/app';
 import { ChallengesProvider } from '../context/ChallengeContext';
 
 import '../styles/global.css';
@@ -6,7 +5,7 @@ import '../styles/global.css';
 function MyApp({ Component, pageProps }) {
   return (
     <ChallengesProvider>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
     </ChallengesProvider >
   )
 }
