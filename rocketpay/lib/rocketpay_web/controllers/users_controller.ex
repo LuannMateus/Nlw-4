@@ -14,4 +14,5 @@ defmodule RocketpayWeb.UsersController do
     end
 
   end
+
 end
