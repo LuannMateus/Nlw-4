@@ -15,8 +15,37 @@
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-items: center;
+
+    margin-top: 30px;
 }
 
 .container section .challengeBox {
     height: 50%;
 }
+
+@media screen and (max-width: 730px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+
+        padding: 2.2rem;
+    }
+
+    .container section {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+
+        margin-top: 60px;
+        padding-bottom: 100px;
+        
+    }  
+}
+
+@media screen and (max-width: 320px) {
+    .container section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}   
